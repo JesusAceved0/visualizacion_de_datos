@@ -27,10 +27,10 @@ df = pd.DataFrame(datos_produccion)
 # Análisis estadístico
 
 
-print("\n📋 Primeras filas del dataset:")
+print(" Primeras filas del dataset:")
 print(df.head())
 
-print("\n📊 Estadísticas generales:")
+print(" Estadísticas generales:")
 print(df.describe())
 
 
@@ -65,7 +65,7 @@ plt.show()
 
 # Correlaciones
 correlacion = df.corr(numeric_only=True)
-print("\n🧠 Matriz de correlación:")
+print(" Matriz de correlación:")
 print(correlacion)
 
 plt.figure()
@@ -78,7 +78,7 @@ plt.show()
 
 
 prom_defectos = df.groupby("turno")["defectos"].mean()
-print("\n🔍 Promedio de defectos por turno:")
+print(" Promedio de defectos por turno:")
 print(prom_defectos)
 
 # Gráfico de barras
